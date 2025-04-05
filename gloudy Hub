@@ -35,6 +35,9 @@ Tab:AddTextbox({
 	end	  
 })
 
+local Section = Tab:AddSection({
+	Name = "admin scripts"
+})
 
 Tab:AddButton({
 	Name = "İnfinite Yield",
@@ -49,6 +52,21 @@ Tab:AddButton({
       	loadstring(game:HttpGet('https://raw.githubusercontent.com/AlterX404/DarkDEX-V5/refs/heads/main/DarkDEX-V5'))()
   	end    
 })
+
+Tab:AddButton({
+	Name = "High Speed",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "High Jump",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100	
+  	end    
+})
+
 
 local Tab = Window:MakeTab({
 	Name = "Alchemy",
@@ -261,5 +279,3 @@ Tab:AddButton({
       		print("injected")
   	end    
 })
-
-
