@@ -1,0 +1,265 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Gloudy Hub", HidePremium = false, SaveConfig = true, Introtext = "Gloudy Hub"})
+
+local Tab = Window:MakeTab({
+	Name = "Local",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "WalkSpeed"
+})
+
+Tab:AddTextbox({
+	Name = "WalkSpeed",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end	  
+})
+
+
+local Section = Tab:AddSection({
+	Name = "JumpLength"
+})
+
+Tab:AddTextbox({
+	Name = "JumpLength",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end	  
+})
+
+
+Tab:AddButton({
+	Name = "İnfinite Yield",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "DarkDex",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/AlterX404/DarkDEX-V5/refs/heads/main/DarkDEX-V5'))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Alchemy",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Scripts"
+})
+
+
+Tab:AddButton({
+	Name = "Blox Fruit",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Fisch",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Blue Lock Rivals",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "TheStrongestBattleGrounds",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Jujutsu Shenanigans",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "HeroesBatttleGrounds",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Ninja Time",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Your Bizarre Adventure",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "VolleyBall Legends",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Basketball Showdown",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Arise Crossover",
+	Callback = function()
+		loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "The Darkones",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Scripts"
+})
+
+
+Tab:AddButton({
+	Name = "Prison Life",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/main/Prison%20Life%20GUI'))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Swat VS Criminals",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/main/Swat%20Vs%20Crims%20GUI'))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Live Topia",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/main/Live%20Topia%20GUI'))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "BrookHaven",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/main/Brook%20Haven%20Gui'))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Prison Adventure",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/main/Prison%20Adventure%20GUI'))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "City Life",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/main/City%20Life%20GUI'))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Raise A Family",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/main/Raise%20A%20Family%20GUI'))()	
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Blade Ball",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/BladeBall%20GUI'))()
+        OrionLib:Destroy()
+      		print("injected")
+  	end    
+})
+
+
