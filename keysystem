@@ -13,7 +13,7 @@ _G.Key = "aZ9_rT2mHdL_5jKqB8_nXwVbF3_uCpYzU6oSg_Lk0E1f"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-    loadstring(game:HttpGet("https://github.com/sasty5555/gloudy-Hub/blob/main/gloudy%20Hub"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sasty5555/gloudy-Hub/refs/heads/main/gloudy%20Hub"))()
 end
 
 function CorrectKeyNotification()
