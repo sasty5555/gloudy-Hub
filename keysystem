@@ -1,0 +1,63 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Key system", HidePremium = false, SaveConfig = true, IntroText = "Key system"})
+
+OrionLib:MakeNotification({
+	Name = "KeySystem",
+	Content = "Enter Key.",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+})
+
+_G.Key = "aZ9_rT2mHdL_5jKqB8_nXwVbF3_uCpYzU6oSg_Lk0E1f"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sasty5555/gloudy-Hub/refs/heads/main/gloudy%20Hub"))()
+end
+
+function CorrectKeyNotification()
+    OrionLib:MakeNotification({
+	Name = "Correct Key!",
+	Content = "You Are Logged İn As!"..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+    })
+end
+
+function IncorrectKeyNotification()
+    OrionLib:MakeNotification({
+	Name = "InCorrect Key!",
+	Content = "Please Enter Correct Key",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+	})
+end
+
+                
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Key",
+	Callback = function()
+      	if _G.KeyInput == _G.Key then
+        MakeScriptHub()
+        CorrectKeyNotification()
+        else
+            IncorrectKeyNotification()
+        end
+  	end    
+})
