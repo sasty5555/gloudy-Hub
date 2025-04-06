@@ -2,6 +2,15 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jen
 
 local Window = OrionLib:MakeWindow({Name = "Gloudy Hub", HidePremium = false, SaveConfig = true, Introtext = "Gloudy Hub"})
 
+function CorrectKeyNotification()
+    OrionLib:MakeNotification({
+	Name = "Correct Key!",
+	Content = "You Are Logged İn As"..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+    })
+end
+
 local Tab = Window:MakeTab({
 	Name = "Local",
 	Icon = "rbxassetid://4483345998",
