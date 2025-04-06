@@ -5,7 +5,7 @@ local Window = OrionLib:MakeWindow({Name = "Gloudy Hub", HidePremium = false, Sa
 function CorrectKeyNotification()
     OrionLib:MakeNotification({
 	Name = "Correct Key!",
-	Content = "You Are Logged İn As"..Player.Name..".",
+	Content = "You Are Logged in as"..Player.Name.." ",
 	Image = "rbxassetid://4483345998",
 	Time = 3
     })
